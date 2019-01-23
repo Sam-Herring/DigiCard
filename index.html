@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title id="name_title"></title>
+
+    <!-- Viewport Management -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" media="screen">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <meta content-type="application/json" charset="UTF-8">
+
+  </head>
+
+  <body class="noScroll" style="linear-gradient(45deg, rgba(32,124,202,1) 7%,rgba(32,124,202,1) 7%,rgba(255,184,28,1) 90%)">
+    <div class="container p-3 mt-5">
+        <div class="d-flex justify-content-center">
+              <div class="jumbotron d-flex align-items-center" style="background-color: white">
+                <div class="card-body py-4 px-0 px-md-5">
+                    <div class="text-center">
+                        <img src="https://cdn.glitch.com/7e4468d4-756b-4d6a-b392-2392d81a2747%2Favatar.png?1539829462315yt" class="rounded-circle responsive" style="max-width: 8rem; max-height: 8rem;" alt="Sam Herring">
+                        <div class="m-4">
+                          <h3>
+                            <span id="name"></span>
+                          </h3>
+                          <span class="profile-subtitle">
+                            <strong id="job_title">Business Systems Analyst</strong><br><i style="font-size:xxsmall">at</i><br><strong><a target="_blank" style="color:black" id="organization_information"></a></strong><br>
+                            <i class="fas fa-location-arrow"></i> <a target="_blank" style="color:black" id="location"></a>
+                          </span>
+                        </div>
+                        <section id="knowledge">
+                          <p class="m-0 profile-knowledge-title">Knowledge</p>
+                          <!-- See parse_information.js for information on how to populate this field -->
+                        </section>
+                      <section class="mt-3 d-flex justify-content-around flex-wrap" id="socials">
+                        <!-- See parse_information.js for information on how to populate this field -->
+                      </section>
+                    </div>
+                  <div>
+                    <br><p style="text-align:center; font-size:10px">Avatar Made with <a target="_blank" href="https://personas.draftbit.com" style="color:black; text-decoration:underline">Personas</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="KnowledgeModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="knowledge_header">This is some text!</h1>
+        <p>These are some words regarding my ability to do my job.</p>
+        <p>Here's a list of all the things I can do!</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="parse_information.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      }) 
+  </script>
+</html>
